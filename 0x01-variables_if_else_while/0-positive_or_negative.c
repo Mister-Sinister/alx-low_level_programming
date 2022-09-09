@@ -1,9 +1,8 @@
 #include <stdlib.h>
 #include <time.h>
 #include <stdio.h>
-/* more headers goes there */
 
-/** 
+/**
  * main - assigns a random number to int n
  * print the number and whether or not it is greater, less or equal to zero
  * Return: Always 0 (success)
