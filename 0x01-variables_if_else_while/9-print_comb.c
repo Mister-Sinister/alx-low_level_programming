@@ -12,7 +12,8 @@ int main(void)
 
 	for (n = 0; n < 10; n++)
 	{
-		putchar("%c, ", (char) n);
+		putchar((char) n);
+		putchar(',');
 	}
 	return (0);
 }

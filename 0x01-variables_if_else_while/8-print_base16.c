@@ -3,7 +3,7 @@
 /**
  * main - prints all the numbers of base 16
  * in lowercase
- * Return: Always 0 (succes)
+ * Return: Always 0 (success)
  */
 
 int main(void)
@@ -12,8 +12,8 @@ int main(void)
 
 	for (n = 0; n < 0xff; n++)
 	{
-		putchar("%c", (char) n);
+		putchar((char) n);
 	}
-	putchar("\n");
+	putchar('\n');
 	return (0);
 }
