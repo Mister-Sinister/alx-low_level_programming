@@ -15,4 +15,19 @@ int _putchar(char c)
 	return (write(1, &c, 1));
 }
 
+
+/**
+ * print_alphabet prints all lowercase alphabets using 
+ * _putchar
+ */
+void print_alphabet(void)
+{
+	char c;
+	for (c = 97; c < 123; c++)
+	{
+		_putchar(c);
+	}
+	_putchar('\n');
+}
+
 #endif /* main_h */
