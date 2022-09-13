@@ -1,11 +1,13 @@
-#include "main.h"
 /**
- * main - prints all lowercase alphabets
- * Return: Always 0 (success)
+ * print_alphabet prints all lowercase alphabets using
+ * _putchar
  */
-
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+        char c;
+        for (c = 97; c < 123; c++)
+        {
+                _putchar(c);
+        }
+        _putchar('\n');
 }
