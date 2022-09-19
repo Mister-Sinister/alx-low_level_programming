@@ -16,11 +16,13 @@ void rev_string(char *s)
 	i = 0;
 	while (s[i] != '\0')
 	{
+		end++;
 		i++;
 	}
-	end = end + i - 2;
+	i -= 1;
+	end -= 1;
 
-	for (j = 0; j < (i - 2) / 2; j++)
+	for (j = 0; j < (i - 1) / 2; j++)
 	{
 		temp = *end;
 		*end = *start;
