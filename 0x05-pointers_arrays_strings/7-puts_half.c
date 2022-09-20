@@ -3,10 +3,9 @@
  * puts_half - prints the second half of a string
  * @str: the pointer of the string
  */
-
 void puts_half(char *str)
 {
-	int i, j, len;
+	int len, i;
 
 	len = 0;
 	while (str[len] != '\0')
@@ -16,18 +15,16 @@ void puts_half(char *str)
 
 	if (len % 2 == 0)
 	{
-		for (i = len / 2; i <= len; i++)
+		for (i = len / 2; str[i] != '\0'; i++)
 		{
 			_putchar(str[i]);
 		}
 	}
-	else if (len % 2 != 0)
+	else if (len % 2)
 	{
-		j = (len - 1) / 2;
-		while (j < len - 1)
+		for (i = (len - 1) / 2; i < len - 1; i++)
 		{
-			_putchar(str[j + 1]);
-			j++;
+			_putchar(str[i + 1]);
 		}
 	}
 	_putchar('\n');
