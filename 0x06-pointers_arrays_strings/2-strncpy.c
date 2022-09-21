@@ -4,13 +4,15 @@
  * @src: the source of the string
  * @dest: the destination string
  * @n: number of bytes to be copied
- * Return: the copied string (dest)
+ * Return: the copied string (buffer)
  */
 
 char *_strncpy(char *dest, char *src, int n)
 {
 	int i;
+	char *buffer;
 
+	buffer = dest;
 	i = 0;
 	while (i < n && *src != '\0')
 	{
@@ -27,5 +29,5 @@ char *_strncpy(char *dest, char *src, int n)
 		i++;
 	}
 
-	return (dest);
+	return (buffer);
 }
