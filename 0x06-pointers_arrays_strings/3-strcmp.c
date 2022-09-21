@@ -37,7 +37,7 @@ int _strcmp(char *s1, char *s2)
 	{
 		return (0);
 	}
-	else if (greater > 0 || n > n2)
+	else if ((greater > 0) || (n > n2))
 	{
 		return (1);
 	}
