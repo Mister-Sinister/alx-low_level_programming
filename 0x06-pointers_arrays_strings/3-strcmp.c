@@ -9,28 +9,32 @@
 int _strcmp(char *s1, char *s2)
 {
 
-	int n, i, check;
+	int n, greater, check;
 
+	check = 0;
 	n = 0;
+	greater = 0;
 	while (*s1 != '\0' && *s2 != '\0')
 	{
 		n++;
-	}
-
-	check = 0;
-	for (i = 0; i < n; i++)
-	{
-		if (s1[i] == s2[i])
+		if (*s1 == *s2)
 		{
 			check++;
 		}
+		else if (*s1 > *s2)
+		{
+			greater++;
+		}
+
+		s1++;
+		s2++;
 	}
 
-	if ((check == n) && (sizeof(s1) == sizeof(s2)))
+	if (check == n)
 	{
 		return (0);
 	}
-	else if (sizeof(s1) > sizeof(s2))
+	else if (greater > 0)
 	{
 		return (1);
 	}
