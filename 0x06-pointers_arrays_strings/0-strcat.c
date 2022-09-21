@@ -10,8 +10,6 @@ char *_strcat(char *dest, char *src)
 {
 	char *buffer;
 
-	buffer = malloc(sizeof(dest) + sizeof(src) - sizeof(char));
-
 	buffer = dest;
 
 	while (*dest != '\0')
