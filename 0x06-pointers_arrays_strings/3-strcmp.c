@@ -8,13 +8,17 @@
 
 int _strcmp(char *s1, char *s2)
 {
-
-	int n, greater, check;
+	int n, n2 greater, check;
 
 	check = 0;
 	n = 0;
 	greater = 0;
-	while (*s1 != '\0' && *s2 != '\0')
+	n2 = 0;
+	while (*s2 != '\0')
+	{
+		n2++;
+	}
+	while (*s1 != '\0')
 	{
 		n++;
 		if (*s1 == *s2)
@@ -29,12 +33,11 @@ int _strcmp(char *s1, char *s2)
 		s1++;
 		s2++;
 	}
-
 	if (check == n)
 	{
 		return (0);
 	}
-	else if (greater > 0)
+	else if (greater > 0 || n > n2)
 	{
 		return (1);
 	}
