@@ -8,12 +8,10 @@
 
 int _strcmp(char *s1, char *s2)
 {
-	int n, n2 greater, check;
+	int n, check;
 
 	check = 0;
 	n = 0;
-	greater = 0;
-	n2 = 0;
 	while (*s2 != '\0')
 	{
 		n2++;
