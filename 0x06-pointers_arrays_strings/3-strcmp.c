@@ -12,10 +12,6 @@ int _strcmp(char *s1, char *s2)
 
 	check = 0;
 	n = 0;
-	while (*s2 != '\0')
-	{
-		n2++;
-	}
 	while (*s1 != '\0' && *s2 != '\0')
 	{
 		n++;
