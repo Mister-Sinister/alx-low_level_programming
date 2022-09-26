@@ -4,7 +4,7 @@
  * @s: the pointer
  * @b: the character to write
  * @n: the number of bytes to write
- * Return: A pointer to the pointer s
+ * Return: s
  */
 
 char *_memset(char *s, char b, unsigned int n)
@@ -15,10 +15,7 @@ char *_memset(char *s, char b, unsigned int n)
 	{
 		s[i] = b;
 	}
-	char **ps;
 
-	ps = &s;
-
-	return (ps);
+	return (s);
 
 }
